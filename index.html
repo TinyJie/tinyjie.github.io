@@ -13,9 +13,11 @@ layout: default
 
     <h1>Poems</h1>
     <hr />
-    <ol class="poems">
-    {% for poem in paginator.poems %}
-      <li><a href="{{ poem.url }}">{{ poem.title }}</a> &raquo; <i><span>{{ poem.date | date_to_string }}</span></i></li>
+    <ol class="posts">
+    {% for post in paginator.posts %}
+        {% if post.categories contains 'poem' %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+        {% endif %}
     {% endfor %}
     </ol>
     
