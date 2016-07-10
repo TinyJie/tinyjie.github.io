@@ -1,9 +1,9 @@
-title: Stack Problems
-description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
+title: TinyJie's Blog
+description: My Personal Blogs
+author: Jie Liu
+github: https://github.com/tinyjie
 about: I am freelance developer. Currently doing more in backend, actually in Python and Django.
-disqus_shortname: stackproblems
+disqus_shortname: everyday blog
 google_analytics: UA-XXXXXXXX-Y
 
 enableTags: true
@@ -36,11 +36,11 @@ urls:
     - text: Projects
       url: /projects/
     - text: Github
-      url: https://github.com/agusmakmun
+      url: https://github.com/tinyjie
     - text: XML Feed
       url: /feed.xml
 
-url: "https://agusmakmun.github.io"
+url: "https://tinyjie.github.io"
 baseurl: ""
 paginate: 20
 per_page: 20
