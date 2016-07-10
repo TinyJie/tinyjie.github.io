@@ -12,6 +12,12 @@ layout: default
     </ol>
 
     <h1>Poems</h1>
+    <hr />
+    <ol class="poems">
+    {% for poem in paginator.poems %}
+      <li><a href="{{ poem.url }}">{{ poem.title }}</a> &raquo; <i><span>{{ poem.date | date_to_string }}</span></i></li>
+    {% endfor %}
+    </ol>
     
     <!-- Pagination links -->
     {% if paginator.total_pages > 1 %}
